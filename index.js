@@ -1,5 +1,6 @@
 const { Client, Collection, Intents, Permissions } = require('discord.js')
-const { token, guildId } = require('./config.json')
+const token = process.env['token']
+
 const fs = require('fs')
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] })
