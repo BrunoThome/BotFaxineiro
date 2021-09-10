@@ -5,7 +5,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node deploy-commands && node index.js"
+    "dev": "node index",
+    "deploy-commands": "node deploy-commands",
+    "start": "node deploy-commands && node index"
   },
   "dependencies": {
     "@discordjs/builders": "^0.6.0",
@@ -17,5 +19,8 @@
     "express": "^4.17.1",
     "node": "^16.6.1",
     "octokit": "^1.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3"
   }
 }

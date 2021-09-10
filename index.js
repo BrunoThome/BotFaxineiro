@@ -1,5 +1,5 @@
 const { Client, Collection, Intents, Permissions } = require('discord.js')
-const token = process.env['token']
+const { token } = require('./config.json')
 
 const fs = require('fs')
 // Create a new client instance
